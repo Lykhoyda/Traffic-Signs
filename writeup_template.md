@@ -26,7 +26,7 @@ The goals / steps of this project are the following:
 [image6]: ./random_images/Do-Not-Enter.jpg "Traffic Sign 4"
 [image7]: ./random_images/sign_1.jpg       "Traffic Sign 5"
 [image8]: ./random_images/stop.jpg         "Traffic Sign 6"
-[image9]: ./examples/results_recognition.jpg "Recognition Results"
+[image9]: ./examples/results_recognition.png "Recognition Results"
 
 ## Rubric Points
 
