@@ -55,7 +55,7 @@ signs data set:
 
 #### 2. Include an exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing which data we have in the set and to which classes it corespond.
+Here is an exploratory visualization of the data set. It showing which data we have in the set and to which classes it corespond.
 
 ![alt text][image1]
 
@@ -127,8 +127,8 @@ Dropout (0.65)
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
 To train the model, I used hyperparameters:
-EPOCHS = 50
-BATCH_SIZE = 256
+EPOCHS = 40
+BATCH_SIZE = 128
 LEARNING_RATE = 0.001
 
 For training model I choose Adam Optimizer, because it's one of the most efficient optimizer. It works by computing adaptive learning rates for each parameter.
@@ -158,7 +158,7 @@ Here are five German traffic signs that I found on the web:
 ![alt text][image4] ![alt text][image5] ![alt text][image6]
 ![alt text][image7] ![alt text][image8]
 
-The first image might be difficult to classify because ...
+One of the image was hard to recognize "120 km/h" because there are classes that looks similar for NN it's "20 km/h" and it decides with 100% percent that it's "20km/h sign". One of the solution it's to add more data with the class "120 km/h". Another images like "No entry", "General caution", "Stop", "Priority road" was perfectly recognized because they have more unique shape.
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -176,8 +176,6 @@ Here are the results of the prediction:
 The model was able to correctly guess 5 of the 6 traffic signs, which gives an accuracy of 83.3%. This compares favorably to the accuracy on the test set of 96.2%
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
-
-One of the image was hard to recognize 120 km/h because there are classes that looks similar. One of the solution it's to add more data with this class.
 
 ![alt text][image9]
 
